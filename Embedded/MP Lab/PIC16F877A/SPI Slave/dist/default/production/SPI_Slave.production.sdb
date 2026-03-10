@@ -1,0 +1,196 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"99 D:\OneDrive\C-Emb\Project\PIC C\PIC16F877A\SPI Slave\main.c
+[e E1006 . `uc
+SPI_MASTER_OSC_DIV4 32
+SPI_MASTER_OSC_DIV16 33
+SPI_MASTER_OSC_DIV64 34
+SPI_MASTER_TMR2 35
+SPI_SLAVE_SS_EN 36
+SPI_SLAVE_SS_DIS 37
+]
+[e E1014 . `uc
+SPI_DATA_SAMPLE_MIDDLE 0
+SPI_DATA_SAMPLE_END 128
+]
+[e E1018 . `uc
+SPI_CLOCK_IDLE_HIGH 8
+SPI_CLOCK_IDLE_LOW 0
+]
+[e E1022 . `uc
+SPI_IDLE_2_ACTIVE 0
+SPI_ACTIVE_2_IDLE 64
+]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"83 D:\OneDrive\C-Emb\Project\PIC C\PIC16F877A\SPI Slave\main.c
+[v _main main `(v  1 e 1 0 ]
+"107
+[v _SPI_Init SPI_Init `(v  1 e 1 0 ]
+"123
+[v _SPI_Slave_Read SPI_Slave_Read `II(v  1 e 1 0 ]
+"133
+[v _SPI_ReceiveAndWait SPI_ReceiveAndWait `(v  1 s 1 SPI_ReceiveAndWait ]
+"138
+[v _SPI_Read SPI_Read `(uc  1 e 1 0 ]
+"144
+[v _SPI_sendData SPI_sendData `(v  1 e 1 0 ]
+"216 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S25 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S34 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S39 . 1 `S25 1 . 1 0 `S34 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES39  1 e 1 @11 ]
+[s S57 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"549
+[u S66 . 1 `S57 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES66  1 e 1 @12 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S78 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"1635
+[u S87 . 1 `S78 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES87  1 e 1 @140 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S140 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1884
+[s S149 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S154 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S160 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S165 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S170 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S175 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S180 . 1 `S140 1 . 1 0 `S149 1 . 1 0 `S154 1 . 1 0 `S160 1 . 1 0 `S165 1 . 1 0 `S170 1 . 1 0 `S175 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES180  1 e 1 @148 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2828
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2936
+[v _TRISA5 TRISA5 `VEb  1 e 0 @1069 ]
+"2972
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2978
+[v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
+"83 D:\OneDrive\C-Emb\Project\PIC C\PIC16F877A\SPI Slave\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"105
+} 0
+"107
+[v _SPI_Init SPI_Init `(v  1 e 1 0 ]
+{
+[v SPI_Init@sType sType `E1006  1 a 1 wreg ]
+[v SPI_Init@sType sType `E1006  1 a 1 wreg ]
+[v SPI_Init@sDataSample sDataSample `E1014  1 p 1 3 ]
+"108
+[v SPI_Init@sClockIdle sClockIdle `E1018  1 p 1 4 ]
+[v SPI_Init@sTransmitEdge sTransmitEdge `E1022  1 p 1 5 ]
+"110
+[v SPI_Init@sType sType `E1006  1 a 1 6 ]
+"121
+} 0
+"123
+[v _SPI_Slave_Read SPI_Slave_Read `II(v  1 e 1 0 ]
+{
+"131
+} 0
+"144
+[v _SPI_sendData SPI_sendData `(v  1 e 1 0 ]
+{
+[v SPI_sendData@data data `uc  1 a 1 wreg ]
+[v SPI_sendData@data data `uc  1 a 1 wreg ]
+"146
+[v SPI_sendData@data data `uc  1 a 1 0 ]
+"147
+} 0
+"138
+[v _SPI_Read SPI_Read `(uc  1 e 1 0 ]
+{
+"142
+} 0
+"133
+[v _SPI_ReceiveAndWait SPI_ReceiveAndWait `(v  1 s 1 SPI_ReceiveAndWait ]
+{
+"136
+} 0

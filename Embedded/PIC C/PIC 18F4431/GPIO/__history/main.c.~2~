@@ -1,0 +1,12 @@
+#include <main.h>
+
+void main()
+{
+
+   while(TRUE)
+   {
+      //TODO: User Code
+      OUTPUT_HIGH(PIN_D0);
+   }
+
+}

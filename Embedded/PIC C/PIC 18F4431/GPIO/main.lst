@@ -1,0 +1,106 @@
+CCS PCH C Compiler, Version 5.115, 5967               19-Feb-24 22:05
+
+               Filename:   D:\OneDrive\C-Emb\Project\CCS\PIC 18F4431\GPIO\main.lst
+
+               ROM used:   100 bytes (1%)
+                           Largest free fragment is 16284
+               RAM used:   5 (1%) at main() level
+                           6 (1%) worst case
+               Stack used: 0 locations
+               Stack size: 31
+
+*
+0000:  GOTO   002E
+.................... #include <main.h>
+.................... #include <18F4431.h>
+.................... //////////// Standard Header file for the PIC18F4431 device ////////////////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... ////        (C) Copyright 1996, 2020 Custom Computer Services          ////
+.................... //// This source code may only be used by licensed users of the CCS C  ////
+.................... //// compiler.  This source code may only be distributed to other      ////
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction ////
+.................... //// or distribution is permitted without written permission.          ////
+.................... //// Derivative programs created using this software in object code    ////
+.................... //// form are not restricted in any way.                               ////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... #device PIC18F4431
+.................... 
+.................... #list
+.................... 
+.................... #device ADC=10
+.................... 
+.................... #FUSES NOWDT                 	//No Watch Dog Timer
+.................... 
+.................... #use delay(crystal=20000000)
+0004:  CLRF   FEA
+0006:  MOVLW  06
+0008:  MOVWF  FE9
+000A:  MOVF   FEF,W
+000C:  BTFSC  FD8.2
+000E:  GOTO   002C
+0012:  MOVLW  06
+0014:  MOVWF  01
+0016:  CLRF   00
+0018:  DECFSZ 00,F
+001A:  BRA    0018
+001C:  DECFSZ 01,F
+001E:  BRA    0016
+0020:  MOVLW  7B
+0022:  MOVWF  00
+0024:  DECFSZ 00,F
+0026:  BRA    0024
+0028:  DECFSZ FEF,F
+002A:  BRA    0012
+002C:  RETURN 0
+.................... 
+.................... 
+.................... 
+.................... void main()
+002E:  CLRF   FF8
+0030:  BCF    FD0.7
+0032:  BCF    FB9.0
+0034:  BCF    FC1.6
+0036:  BCF    FC1.7
+0038:  MOVLW  00
+003A:  MOVWF  FB8
+.................... {
+.................... 
+....................    while(TRUE)
+....................    {
+....................       //TODO: User Code
+....................       OUTPUT_HIGH(PIN_D0);
+003C:  BCF    F95.0
+003E:  BSF    F8C.0
+....................       delay_ms(1000);
+0040:  MOVLW  04
+0042:  MOVWF  05
+0044:  MOVLW  FA
+0046:  MOVWF  06
+0048:  RCALL  0004
+004A:  DECFSZ 05,F
+004C:  BRA    0044
+....................       OUTPUT_low(PIN_D0);
+004E:  BCF    F95.0
+0050:  BCF    F8C.0
+....................       delay_ms(1000);
+0052:  MOVLW  04
+0054:  MOVWF  05
+0056:  MOVLW  FA
+0058:  MOVWF  06
+005A:  RCALL  0004
+005C:  DECFSZ 05,F
+005E:  BRA    0056
+0060:  BRA    003C
+....................    }
+.................... 
+.................... }
+0062:  SLEEP 
+
+Configuration Fuses:
+   Word  1: C200   HS FCMEN IESO
+   Word  2: 3E0E   PUT BROWNOUT BORV20 NOWDT WDT32768 NOWINEN
+   Word  3: 9D3C   NOPWMPIN LPOL_HIGH HPOL_HIGH T1LOWPOWER FLTAC1 SSP_RC PWM4B5 EXCLKC3 MCLR
+   Word  4: 0081   STVREN NOLVP NODEBUG
+   Word  5: C00F   NOPROTECT NOCPB NOCPD
+   Word  6: E00F   NOWRT NOWRTC NOWRTB NOWRTD
+   Word  7: 400F   NOEBTR NOEBTRB

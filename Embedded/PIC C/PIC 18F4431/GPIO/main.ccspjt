@@ -1,0 +1,80 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F4431
+CCSVerions=5.115
+Compiler=PCH
+CCSVersion=5.115
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[D:\OneDrive\C-Emb\Project\CCS\PIC 18F4431\GPIO\main]
+Type=4
+[mru-list]
+1=main.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=6
+D1=15-02-2024
+D1_L=2
+D1_L1=[80974]Project Opened.
+D1_L2=[82902]Project Closed.
+D2=16-02-2024
+D2_L=8
+D2_L1=[74390]Project Opened.
+D2_L2=[79087]Started Editing.
+D2_L3=[79389]Stopped Editing.
+D2_L4=[79645]Started Editing.
+D2_L5=[79964]Stopped Editing.
+D2_L6=[80081]Started Editing.
+D2_L7=[80389]Stopped Editing.
+TotalEdit=3
+TotalDebug=0
+D2_E=1
+D2_D=0
+D2_L8=[83109]Project Closed.
+D3=17-02-2024
+D3_L=1
+D3_L1=[60621]Project Opened.
+D4=18-02-2024
+D4_L=1
+D4_L1=[81144]Project Closed.
+D5=19-02-2024
+D5_L=4
+D5_L1=[76418]Project Opened.
+D5_L2=[77417]Started Editing.
+D5_L3=[77826]Stopped Editing.
+D5_E=2
+D5_D=0
+D5_L4=[80283]Project Closed.
+D6=03-03-2024
+D6_L=2
+D6_L1=[21271]Project Opened.
+D6_L2=[24892]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+2=main.h
+t2=1
+Count=3
+3=18F4431.h
+t3=62
+[main.c]
+Type=4
+
+[defines]
+buildcount=5
+
+[Documentation]
+1=D:\OneDrive\C-Emb\Project\CCS\PIC 18F4431\GPIO\main Notes.txt
+1T=main Notes.txt
+1E=
+1W=0
+Count=1
+[Units]
+Count=1
+1=main (main)
