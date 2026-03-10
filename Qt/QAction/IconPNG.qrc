@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/PNG">
+        <file>Res/logout.png</file>
+        <file>Res/new-document.png</file>
+        <file>Res/new-folder.png</file>
+        <file>Res/save-instagram.png</file>
+    </qresource>
+</RCC>
