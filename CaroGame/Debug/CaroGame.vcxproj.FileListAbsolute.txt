@@ -1,2 +1,0 @@
-D:\ThuanGit\Fresher\Mock\CaroGame\Debug\CaroGame.exe
-D:\ThuanGit\Fresher\Mock\CaroGame\Debug\CaroGame.pdb
