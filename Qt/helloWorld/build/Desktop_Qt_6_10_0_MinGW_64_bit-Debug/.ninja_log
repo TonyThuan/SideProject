@@ -1,0 +1,14 @@
+# ninja log v6
+18	527	7851891179651956	helloWorld_autogen/timestamp	8911df3c4ce1e6ae
+18	527	7851891179651956	helloWorld_autogen/mocs_compilation.cpp	8911df3c4ce1e6ae
+18	527	7851891179651956	D:/CPP/Qt/helloWorld/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/helloWorld_autogen/timestamp	8911df3c4ce1e6ae
+18	527	7851891179651956	D:/CPP/Qt/helloWorld/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/helloWorld_autogen/mocs_compilation.cpp	8911df3c4ce1e6ae
+532	705	7851891181105264	CMakeFiles/helloWorld.dir/helloWorld_autogen/mocs_compilation.cpp.obj	1ebb5530880135c5
+541	6038	7851891181195209	CMakeFiles/helloWorld.dir/main.cpp.obj	f01063147b2d0914
+6044	6389	7851891236225452	helloWorld.exe	6af96e19bd0258fd
+64	351	7851895810001514	helloWorld_autogen/timestamp	8911df3c4ce1e6ae
+64	351	7851895810001514	helloWorld_autogen/mocs_compilation.cpp	8911df3c4ce1e6ae
+64	351	7851895810001514	D:/CPP/Qt/helloWorld/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/helloWorld_autogen/timestamp	8911df3c4ce1e6ae
+64	351	7851895810001514	D:/CPP/Qt/helloWorld/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/helloWorld_autogen/mocs_compilation.cpp	8911df3c4ce1e6ae
+353	5484	7851895812924281	CMakeFiles/helloWorld.dir/main.cpp.obj	f01063147b2d0914
+5484	5773	7851895864246547	helloWorld.exe	6af96e19bd0258fd

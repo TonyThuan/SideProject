@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Gui/">
+    <file alias="Main.qml">D:/CPP/Qt/Gui/Main.qml</file>
+  </qresource>
+</RCC>
+
